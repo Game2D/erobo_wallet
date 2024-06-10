@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "erobo_wallet",
+    "name": "Erobo Wallet",
+    "scheme": "erobo-wallet",
     "slug": "erobo_wallet",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,10 +19,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.game2d.erobo_wallet"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "648c9841-4739-44b3-9a3b-8380bdac9141"
+      }
     }
   }
 }
